@@ -67,7 +67,7 @@ class HomeListConfigurationViewController: HomeListViewController {
 
         switch HomeListSection(rawValue: indexPath.section) {
             case .homes?:
-                reuseIdentifier = Identifiers.homeCell
+                reuseIdentifier = HomeListViewController.Identifiers.homeCell
 
             case .primaryHome?:
                 reuseIdentifier = Identifiers.primaryHomeCell
