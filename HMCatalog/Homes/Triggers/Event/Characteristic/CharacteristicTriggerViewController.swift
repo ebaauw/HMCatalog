@@ -15,6 +15,9 @@ class CharacteristicTriggerViewController: EventTriggerViewController {
     
     struct Identifiers {
         static let selectCharacteristicSegue = "Select Characteristic"
+        static let homeCell = "HomeCell"
+        static let addCell = "AddCell"
+        static let conditionCell = "ConditionCell"
     }
     
     // MARK: Properties
