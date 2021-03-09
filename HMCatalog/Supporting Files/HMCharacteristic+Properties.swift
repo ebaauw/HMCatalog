@@ -51,6 +51,9 @@ extension HMCharacteristic {
                 }
             }
         }
+        if (self.metadata?.format == HMCharacteristicMetadataFormatData) {
+            return value.debugDescription
+        }
         return "\(value)"
     }
     
