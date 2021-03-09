@@ -31,7 +31,7 @@ class CharacteristicsViewController: HMCatalogViewController, HMAccessoryDelegat
     /// Reloads the view and enabled notifications for all relevant characteristics.
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        title = service.name
+        title = service.name + " - " + service.uniqueIdentifier.uuidString + " " + service.localizedDescription
         setNotificationsEnabled(true)
         reloadTableView()
     }
